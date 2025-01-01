@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 02</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- naveBare section stert hear -->
+  <header id="headerSectionLG" class="sticky-top">
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo"><a class="navbar-brand" href="#"><img src="./img/logo/logo.png" alt=""></a></h1>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav m-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="#">Shop <iconify-icon icon="solar:alt-arrow-down-linear" width="24" height="24"></iconify-icon></a>
+              <ul class="subManu">
+                <li><a href="./index.html">Home</a>
+                  <ul class="subManu">
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">B</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">about</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./shopDetails.html">On Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Brands</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex formLg" role="search" >
+            <button class="search hideSm"><i class="bi bi-search"></i></button>
+            <input class="form-control  formSm" type="search" placeholder="Search" aria-label="Search">
+          </form> -->
+          <div class="shortcutIcon d-flex align-items-center ">
+            <i class="fa-light fa-magnifying-glass search" id="searchForm01"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-light fa-heart"></i>
+            <div class="productCount">
+            <i class="fa-light fa-bag-shopping"></i>
+            <div class="d-flex align-items-center justify-content-center">
+              <p>1</p>
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+    
+  
+    <!-- mobile menu stert hear -->
+    <div id="mobileheder">
+    <div class="d-flex align-items-center justify-content-between d-block d-lg-none">
+      <button class="headerIcon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <iconify-icon class="headerIcon" icon="uil:align-justify" width="24" height="24"></iconify-icon>
+      </button>
+      <h1 class="logo"><a class="navbar-brand" href="#"><img src="./img/logo/logo.png" alt=""></a></h1>
+      <div class="shortcutIcon d-flex">
+        <i class="fa-light fa-magnifying-glass search" id="searchForm02"></i>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="./img/logo/logo.png" alt=""></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="dropdown mt-3">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="#">Shop <iconify-icon icon="solar:alt-arrow-down-linear" width="24" height="24"></iconify-icon></a>
+              <ul class="subManu">
+                <li><a href="#">hello</a></li>
+                <li><a href="#">about</a>
+                <ul class="subManu">
+                  <li><a href="#">HR</a></li>
+                </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">On Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Brands</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!-- mobile menu end hear -->
+
+  
+
+    <!-- mobile footer manu  -->
+    <div class=" bottom shortcutIcon d-lg-none">
+      <div class="container d-inlinflex d-flex justify-content-evenly">
+        <i class="fa-light fa-magnifying-glass search" id="searchForm03"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-light fa-heart"></i>
+        <div class="productCount">
+          <i class="fa-light fa-bag-shopping"></i>
+          <div class="d-flex align-items-center justify-content-center">
+          <p>1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+     <!-- naveBare section end hear -->
+    <!-- header Section part html stert hear -->
+
+    <!-- serch manu html stert hear -->
+    <div id="serchManu" class="container-fluid">
+      <form action="">
+        <input type="text" placeholder="Search">
+        <button><i class="fa-light fa-magnifying-glass search"></i></button>
+      </form>
+      <button class="closeBtn"><i class="fa-light fa-xmark"></i></button>
+    </div>
+    <!-- serch manu html end hear -->
+
+    <!-- Page title section html stert hear -->
+     <section id="pageTitle">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Shop - Details Style One</h2>
+                    <p>Home  /  Shop</p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Page title section html end hear -->
+    <!-- product Details section html stert hear -->
+    <section id="productDetails">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="productImg">
+                      <img class="img" src="./img/product01.png" alt="">
+                  </div>
+                  <div class="fullSlide">
+                    <div class="productImgSlide">
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                      <div class="slideImg"><img src="./img/product02.png" alt=""></div>
+                    </div>
+                    <div id="imgSlideLeftArrow"><i class="fa-light fa-chevron-left"></i></div>
+                    <div id="imgSlideRightArrow"><i class="fa-light fa-chevron-right"></i></div>
+                  </div>
+              </div>
+              <div class="col-lg-6 contant">
+                  <h4>Leather Jackets</h4>
+                  <div class="review"><span>5.0</span> <span class="starIcon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> <span class="hiland"><i class="fa-solid fa-minus"></i></span> <span>(5 Customer Review)</span></div>
+
+                  <h6 class="price">$125.65 <samp>$150.65</samp></h6>
+                  <p class="prodDesc">Quickly productivate holistic systems after 24/365 e-commerce. Continually synthesize superior catalysts for change via high standards in leadership skills. Collaboratively evisculate distributed functionalities rather than timely methods of empowerment.</p>
+                  <hr>
+                  <div class="size">
+                    <label> Size :</label>
+                    <select>
+                      <option>45</option>
+                      <option>45</option>
+                      <option>45</option>
+                      <option>45</option>
+                    </select>
+                  </div>
+                  <div class="color">
+                    <label> Color :</label>
+                    <select>
+                      <option>red</option>
+                      <option>Green</option>
+                      <option>Yelow</option>
+                      <option>Blow</option>
+                    </select>
+                  </div>
+
+                  <div class="row quantityOrder">
+                    <div class="col-12">
+                      <h2>Quantity:</h2>
+                    </div>
+                    <div class="col-12 quantityButn">
+                      <div class="count">
+                      <input class="countBtn" id="decrementBtn"  type="button" value="-">
+                      <input class="couNumber" type="text" value="1">
+                      <input class="countBtn" id="incrementBtn" type="button" value="+">
+                      </div>
+                      <div class="button">
+                        <a href="#" class="primareBtn"><i class="fa-light fa-cart-plus"></i> Add To Cart</a>
+                      </div>
+                      <div class="shortIcon">
+                        <a href="#" class="primareBtn"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#" class="primareBtn"><i class="fa-solid fa-eye"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="skuDetels">
+                    <div class="catagory">
+                      <h5>SKU:  <samp>W0243</samp></h5>
+                      <h5>Tags: <samp>Hot, Women</samp></h5>
+                      <h5>Category:  <samp>W0243</samp></h5>
+                    </div>
+                    <div class="socilemedia">
+                      <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </section>
+  <!-- product Details section html end hear -->
+
+     <!-- Product Description section html stert hear -->
+      <section id="productDesc">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-12" style="margin: auto;">
+              <div class="button d-lg-flex justify-content-center">
+                <h2 class="btnDec1 active">Product Description</h2>
+                <h2 class="btnDec2">Customer Review(1)</h2>
+                <h2 class="btnDec3">Additional Information</h2>
+              </div>
+              <div class="contant1 active">
+                <p>build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms. Dynamically generate interoperable e-business vis-a-vis goal-oriented value.  <br><br>
+
+                  Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+                  Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.</p>
+              </div>
+              <div class="contant2">
+                <p>Conveniently build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms. Dynamically generate interoperable e-business vis-a-vis goal-oriented value. Completely pursue fully tested content whereas multifunctional core competencies. Progressively scale team driven process improvements before premier functionalities. Holisticly cultivate intermandated methodologies rather than virtual technology. Monotonectally target interactive synergy without process-centric e-markets. Holisticly pursue enterprise-wide leadership skills for enterprise leadership. <br><br>
+
+                  Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+                  Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.</p>
+              </div>
+              <div class="contant3">
+                <p>Conveniently build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms. Dynamically generate interoperable e-business vis-a-vis goal-oriented value. Completely pursue fully tested content whereas multifunctional core competencies. Progressively scale team driven process improvements before premier functionalities. Holisticly cultivate intermandated methodologies rather than virtual technology. Monotonectally target interactive synergy without process-centric e-markets. Holisticly pursue enterprise-wide leadership skills for enterprise leadership. Collaboratively underwhelm standardized expertise after effective bandwidth. Conveniently productivate holistic collaboration and idea-sharing rather than granular strategic theme areas. <br><br>
+
+                  Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+                  Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- Product Description section html end hear -->
+
+  <!-- Releted Products section html ster hear -->
+  <section id="reletedProducts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Releted Products</h2>
+        </div>
+      <div class="fullSlider">
+       <div class="productSlider">
+        <div class="productCard">
+          <div class="card">
+            <div class="img">
+              <img src="./img/product01.png" alt="">
+              <p>New</p>
+            </div>
+            <div class="contant">
+              <div>
+                <h4>Baseball Cap</h4>
+                <p>$125.65</p>
+              </div>
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="card">
+            <div class="img">
+              <img src="./img/product01.png" alt="">
+              <p>New</p>
+            </div>
+            <div class="contant">
+              <div>
+                <h4>Baseball Cap</h4>
+                <p>$125.65</p>
+              </div>
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><div class="productCard">
+          <div class="card">
+            <div class="img">
+              <img src="./img/product01.png" alt="">
+              <p>New</p>
+            </div>
+            <div class="contant">
+              <div>
+                <h4>Baseball Cap</h4>
+                <p>$125.65</p>
+              </div>
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><div class="productCard">
+          <div class="card">
+            <div class="img">
+              <img src="./img/product01.png" alt="">
+              <p>New</p>
+            </div>
+            <div class="contant">
+              <div>
+                <h4>Baseball Cap</h4>
+                <p>$125.65</p>
+              </div>
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="card">
+            <div class="img">
+              <img src="./img/product01.png" alt="">
+              <p>New</p>
+            </div>
+            <div class="contant">
+              <div>
+                <h4>Baseball Cap</h4>
+                <p>$125.65</p>
+              </div>
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="card">
+            <div class="img">
+              <img src="./img/product01.png" alt="">
+              <p>New</p>
+            </div>
+            <div class="contant">
+              <div>
+                <h4>Baseball Cap</h4>
+                <p>$125.65</p>
+              </div>
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       </div>
+
+       <div id="reletedProductsLeftArrow"><i class="fa-light fa-chevron-left"></i></div>
+       <div id="reletedProductsRightArrow"><i class="fa-light fa-chevron-right"></i></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- Releted Products section html end hear -->
+
+    <!-- Footer Section part html Stert hear -->
+    <footer id="footer2Section">
+        <div class="container">
+          <div class="row subscribeRow">
+            <div class="col-12 col-lg-6">
+              <h2>Subscribe to Our Newsletter!</h2>
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+            </div>
+            <div class="col-12 col-lg-6 text-end">
+              <form>
+                <input type="email" placeholder="Enter your email....">
+                <button type="submit" class="primareBtn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="row">
+            <div class="col-12 col-lg-3 contactCol">
+              <img src="./img/logo/logo.png" alt="">
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+            </div>
+            <div class="col-6 col-lg-2 accountCol" >
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>My Account</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>View Cart</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Wishlist</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Compare</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>New Products</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 accountCol" >
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Help</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Contact Us</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Feedback</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Customer Service</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Store Locations</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 accountCol" >
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Help</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Contact Us</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Feedback</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Customer Service</a></li>
+                <li><a href="#" class="d-flex align-items-center"><iconify-icon icon="weui:arrow-outlined" width="12" height="24"></iconify-icon>Store Locations</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 contactCol">
+              <h3>Contact Us</h3>
+              <div class="row">
+                <div class="col-2">
+                  <iconify-icon icon="gridicons:location" width="24" height="24"></iconify-icon>
+                </div>
+                <div class="col-10">
+                  <p>830 Broad way, New York, NY 10003, United States</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <iconify-icon icon="fluent:call-20-filled" width="20" height="20"></iconify-icon>
+                </div>
+                <div class="col-10">
+                  <p>+18008660286</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <iconify-icon icon="ic:baseline-mail" width="24" height="24"></iconify-icon>
+                </div>
+                <div class="col-10">
+                  <p>aetor.info@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <hr>
+        <section id="footerBottomLine">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-12">
+                <p>© 2022 All Rights Reserved <samp>Aytor</samp> By <samp>Angfuzsoft</samp>.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+      
+      <!-- Footer Section part html End hear -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.countdown.js"></script>
+    <script src="./js/iconify-icon.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

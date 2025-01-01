@@ -1,0 +1,188 @@
+@media (max-width: 767.98px) {
+    /* header Section part css stert hear */
+    /* NaveBare section Start hear  */
+    #mobileheder button{
+        color: #000;
+        outline: none;
+        border: none;
+        margin-left: 2px;
+        background-color: transparent;
+    }
+    #mobileheder .offcanvas{
+        width: 80%;
+    }
+     /* NaveBare section End hear  */
+    /* header Section part css end hear */
+
+    /* serch manu css stert hear */
+    #serchManu input.active{
+        width: 70%;
+      }
+    #serchManu button{
+        padding: 7px 35px;
+        width: 10%;
+    }
+  /* serch manu css end hear */
+  /* popup section css stert hear */
+    
+    #popupSection .content{
+      width: 86%;
+      height: 420px;
+    }
+    #popupSection .content .text{
+      margin-right:5%;
+      margin-left: 5%;
+      width: calc(100% - 10%);
+    }
+    #popupSection .content h2{
+      margin-top:30px;
+    }
+    #popupSection .content p{
+      line-height: 150%;
+      margin-top:10px;
+    }
+    #popupSection .content .searchBox .keyword{
+      width: 100%;
+      display: block;
+      margin-bottom: 16px;
+    }
+    #popupSection .content .closeBtn{
+      top: 6px;
+      right: 6px;
+    }
+    /* popup section css en hear */
+    /* benerSection css stert hear */
+    .sliders1 .test{
+        position: absolute;
+        left: 51%;
+        transform: translateX(-50%);
+        bottom: 6%;
+        display: flex;
+      }
+    /* benerSection css stert hear */
+    /* bener Section part css stert hear */
+    #benerSection{
+        background-image: url(../img/baner01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-size: cover;
+        padding: 0px 0;
+    }
+    #benerSection .container .row{
+        padding: 60px 0px 60px 5px;
+        margin: 0px;
+    }
+    #benerSection h6{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color: #1d1d1d;
+        margin-bottom: 14px;
+    }
+    #benerSection h2{
+        font-size: 34px;
+    }
+    /* bener Section part css end hear */
+    /* OfTheDaysSection css stert hear */
+    #OfTheDaysSection .OfTheDaysSlider .slide .content p{
+        width: 90%;
+      }
+    /* OfTheDaysSection css end hear */
+    /* specialOfferSection Section part css stert hear */
+    #specialOfferSection .content{
+        width: 95%;
+    }
+    .video iframe{
+        width: 100%;
+        height: 420px;
+        padding-bottom: 5px;
+      }
+    /* specialOfferSection Section part css end hear */
+    /* QUICK Link Section part css stert hear */
+    #latestNews{
+        margin-bottom: 230px;
+      }
+    #quicklink{
+        margin-bottom: -200px;
+    }
+    #quicklink .container .item{
+        margin-top: 20px;
+    }
+    /* QUICK Link Section part css end hear */
+    /* Footer Section part css Stert hear */
+    #footerSection .logo{
+        margin-bottom: 30px;
+    }
+    #footerSection .openingTimeCol h3{
+    margin-top: 40px;
+    }
+    #footerSection .contactCol{
+        margin-top: 40px;
+    }
+    #footerSection hr{
+        margin: 40px 0px;
+      }
+      #footerSection{
+        margin-bottom: 18px;
+      }
+    /* Footer Section part css end hear */
+
+    /* Page title section css stert hear  */
+      #pageTitle {
+        padding: 60px 0;
+      }
+      #pageTitle h2{
+        font-size: 26px;
+      }
+      /* Page title section css end hear  */
+      #productDesc .row .button{
+        margin:0 15%;
+        margin-bottom: 30px;
+      }
+      #productDesc h2{
+        display: block;
+        width: 100%;
+        padding: 10px  5px;
+        margin: -0.5px;
+      }
+
+
+        /* product Details section css stert hear */
+        #productDetails .productImg .img{
+          width: 100%;
+          height: 317px;
+          margin-bottom: 20px;
+        }
+        #productDetails .fullSlide .productImgSlide{
+          width: 100%;
+        }
+        #productDetails .productImgSlide .slideImg img{
+          width: 100%;
+        }
+        
+        #productDetails .contant .quantityOrder .count input{
+          border: 1px solid #e0e0e0;
+          width: 30px;
+          height: 30px;
+        }
+        #productDetails .contant .quantityOrder .count input.countBtn,
+        #productDetails .contant .quantityOrder .count input.countBtn{
+          font-size: 30px;
+          font-weight: 300;
+          line-height: 30px;
+        }
+        #productDetails .contant .quantityOrder .primareBtn{
+          display: flex;
+          font-size: 12px;
+          justify-content: center;
+          padding: 6px 20px;
+          margin: 0px 5px;
+        }
+        #productDetails .contant .quantityOrder .shortIcon .primareBtn{
+          width: 30px;
+          margin: 0 5px;
+        }
+        /* product Details section css end hear */
+
+}
