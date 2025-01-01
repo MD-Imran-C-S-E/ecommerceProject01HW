@@ -116,7 +116,7 @@ $(document).ready(function () {
   });
   
   // Countdown Timer
-  $('.OfTheDaysSlider .timer').countdown('2024/12/28', function (event) {
+  $('.OfTheDaysSlider .timer').countdown('2025/01/10', function (event) {
   $(".days").html(event.strftime('%d'));
   $(".hour").html(event.strftime('%H'));
   $(".minute").html(event.strftime('%M'));
